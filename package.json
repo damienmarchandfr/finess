@@ -1,0 +1,48 @@
+{
+	"name": "finess",
+	"version": "0.0.0",
+	"author": "Damien Marchand",
+	"license": "MIT",
+	"repository": "",
+	"description": "",
+	"keywords": [
+		"finess",
+		"sanitaire",
+		"database"
+	],
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">=8.10"
+	},
+	"engineStrict": true,
+	"scripts": {
+		"build": "rimraf dist && tsc -p tsconfig.build.json",
+		"prepublishOnly": "yarn build",
+		"test": "jest",
+		"test:watch": "jest --watch --verbose false",
+		"example:ts": "ts-node-dev --respawn src/examples/example.ts",
+		"example:js": "ts-node-dev --respawn src/examples/example.js",
+		"parse": "ts-node-dev --respawn src/parser.ts"
+	},
+	"dependencies": {
+		"moment": "^2.29.1"
+	},
+	"devDependencies": {
+		"@types/jest": "^24.0.23",
+		"@types/moment": "^2.13.0",
+		"@types/node": "^10",
+		"jest": "^24.9.0",
+		"rimraf": "^3.0.0",
+		"ts-jest": "^24.2.0",
+		"ts-node": "^8.5.4",
+		"ts-node-dev": "^1.1.6",
+		"tslint": "^5.20.1",
+		"tslint-config-prettier": "^1.18.0",
+		"typescript": "^3.7.3",
+		"typescript-tslint-plugin": "^0.5.5"
+	}
+}
