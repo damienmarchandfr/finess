@@ -49,6 +49,7 @@ You can see examples in "examples' folder.
     const  finess = require('finess')
     
     const  all = finess.getAllEstablishments()
+	console.log(all)
     
     const  establishments = finess.getEstablishmentsWithFiness('010003820')
     console.log(establishments)
