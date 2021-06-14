@@ -14,7 +14,7 @@ Jeu de données : [voir](https://www.data.gouv.fr/fr/datasets/finess-extraction-
 > les établissements   répertoriés dans FINESS est le produit BD-ADRESSE
 > en version 2.1 de l’IGN (Institut Géographique National).
 
-##  Installation
+##  Installation (WIP !!)
 
     npm install finess
 
@@ -44,7 +44,7 @@ You can see examples in "examples' folder.
     console.log(establishment)
 
 
-###  How to use in JavaScript
+###  How to use in JavaScript (WIP !!)
 
     const  finess = require('finess')
     
