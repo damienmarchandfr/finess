@@ -1,4 +1,4 @@
-const establishments = require('./data/data.json') as Establishment[]
+const establishments = require('./data.json') as Establishment[]
 
 export interface Geolocalisation {
 	nofinesset: string // Numéro FINESS ET
